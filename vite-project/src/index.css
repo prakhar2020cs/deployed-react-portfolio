@@ -1,0 +1,6 @@
+*{
+  box-sizing:border-box; /* border is considered when calculating the height and width of the obj */
+  margin:0;
+  padding:0;
+  font-family:"outfit", Arial,Helvetica,sans-serif;   
+}
