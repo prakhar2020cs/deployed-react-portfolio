@@ -1,10 +1,26 @@
 [
     {
-      "title": "Project A",
+      "title": "Online courses website",
       "imageSrc": "projects/project.png",
-      "description": "This is a project made to learn the latest languages by building an app.",
-      "skills": ["React", "Express", "Node"],
-      "demo": "https://www.example.com",
-      "source": "https://www.github.com"
-    }
+      "description": "This is a project made to learn HTML, CSS, Javascript, Bootstrap by building frontend of the website.",
+      "skills": ["React", "Javascript", "Bootstrap"],
+      "source": "https://github.com/prakhar2020cs/2020cs128project-id22/tree/main/project%20copy"
+    }, 
+    {
+      "title": "Training portfolio",
+      "imageSrc": "projects/project.png",
+      "description": "This is a portfolio of my work. I made it to learn frontend by doing tasks, during the training period in my colledge.",
+      "skills": ["React", "Javascript", "Bootstrap"],
+      "demo": "https://eloquent-flan-a17ca3.netlify.app"
+      "source": "https://github.com/prakhar2020cs/react/tree/main/myapp"
+      
+    }, 
+    {
+      "title": "Document app UI",
+      "imageSrc": "projects/project.png",
+      "description": "This is a Frontend(UI) for an app which shows storage, notes etc. I made it for better understanding of React and TailwindCSS.",
+      "skills": ["React", "TailwindCSS"],
+      "source": "https://github.com/prakhar2020cs/vite-project/tree/main/src"
+      
+    } 
 ]

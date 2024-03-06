@@ -8,6 +8,11 @@
     padding-top:61px ;
     z-index: 2;
     margin: 0 10%;
+    
+}
+
+.menuBtn{
+    display: none;
 }
 
 .title{
@@ -15,6 +20,7 @@
     font-weight: 600;
     text-decoration:none ;
     color: var( --color-text);
+    
 
 }
 
@@ -27,12 +33,16 @@
     display:flex;
     gap:47px;
     list-style: none;
+    
+    
 }
 
 .menuItems a{
     font-size: 25px;
     color: var(--color-text);
     text-decoration: none;
+    box-shadow: 0 16px 14px 0 #19376d;
+    border-radius: 100%;
 }
 
 @media screen and (max-width:830px){

@@ -1,18 +1,73 @@
-.links{
+@import "../../vars.css";
+
+.container {
+  color: var(--color-text);
+  margin-top: 120px;
+  background-color: var(--color-secondary);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100vw;
+  padding: 58px 10%;
+  gap: 10px;
+  
+
+}
+
+.heading {
+  font-size: 50px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 6px;
+  gap: 30px;
+
+}
+.heading p {
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 7px;
+}
+
+
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style: none;
+  gap: 26px;
+  
+ 
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  text-decoration: none;
+  color: var(--color-text);
+  
+}
+
+
+
+
+@media screen and (max-width: 830px) {
+  .container {
+    flex-direction: column;
+    gap: 23px;
+  }
+
+  .heading {
     display: flex;
     flex-direction: column;
-    align-items:flex-end;
-    margin-right: 25vh;
-    margin-top: 2vh;
-}
-
-.heading{
-    display: flex;
     align-items: center;
-    justify-content: center;
-    
-}
+  }
 
-.contacts{
-    padding: 1vh;
+  .links {
+    align-items: center;
+  }
 }

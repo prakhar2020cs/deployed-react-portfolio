@@ -23,17 +23,15 @@ const Navbar = () => {
           className={`${styles.menuItems} ${menuOpen && styles.menuOpen }`}
             onClick={()=> setMenuOpen(false)}   
              >   {/* "menuOpen" style is applied when menuOpen is true */}
+            
             <li>
-                <a href="#about" >About</a>
-            </li>
-            <li>
-                <a href="#experience" >Skills</a>
+                <a href="#skills" >Skills</a>
             </li>
             <li>
                 <a href="#projects" >Projects</a>
             </li>
             <li>
-                <a href="#about" >Contacts</a>
+                <a href="#contact" >Contacts</a>
             </li>
         </ul>
     </div>
