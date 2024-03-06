@@ -3,7 +3,7 @@ import { getImageUrl } from "../../utils";
 
 export const ProjectCard = ({
   // eslint-disable-next-line react/prop-types
-  project: { title, imageSrc, description, skills, source },
+  project: { title, imageSrc, description, skills, source , demo},
 }) => {
   return (
     <div className={styles.container}>
@@ -15,21 +15,23 @@ export const ProjectCard = ({
       <h3 className={styles.title}>{title}</h3>
       <p className={styles.description}>{description}</p>
       <ul className={styles.skills}>
-             {skills.map((skill, id) => {
+             {
+             skills.map((skill, id) => {
           return (
             <li key={id} className={styles.skill}>
               {skill}
             </li>
-          );
-        })}
+                );
+             })}
       </ul>
       <div className={styles.links}>
         <a target="_blank" href={source} className={styles.link}>
           Source
         </a>
-        {/* <a href={source} className={styles.link}>
-          Source2
-        </a> */}
+        <a target="_blank" href={demo} className={styles.link}>
+          Demo
+        </a>
+     
       </div>
     </div>
   );
