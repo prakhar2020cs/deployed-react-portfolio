@@ -1,7 +1,7 @@
 [
     {
       "title": "Online courses website",
-      "imageSrc": "projects/project.png",
+      "imageSrc": "projects/website.png",
       "description": "This is a project made to learn HTML, CSS, Javascript, Bootstrap by building frontend of the website.",
       "skills": ["React", "Javascript", "Bootstrap"],
       "source": "https://github.com/prakhar2020cs/2020cs128project-id22/tree/main/project%20copy",
@@ -9,7 +9,7 @@
     }, 
     {
       "title": "Training portfolio",
-      "imageSrc": "projects/project.png",
+      "imageSrc": "projects/trainingtasks.png",
       "description": "This is a portfolio of my work. I made it to learn frontend by doing tasks, during the training period in my colledge.",
       "skills": ["React", "Javascript", "Bootstrap"],
       
@@ -19,7 +19,7 @@
     }, 
     {
       "title": "Document app UI",
-      "imageSrc": "projects/project.png",
+      "imageSrc": "projects/docs.png",
       "description": "This is a Frontend(UI) for an app which shows storage, notes etc. I made it for better understanding of React and TailwindCSS.",
       "skills": ["React", "TailwindCSS"],
       "source": "https://github.com/prakhar2020cs/vite-project/tree/main/src",
@@ -28,10 +28,10 @@
     }, 
     {
       "title": "This Portfolio",
-      "imageSrc": "projects/project.png",
+      "imageSrc": "projects/thisportfolio.png",
       "description": "This is the portfolio on which your are, right now. I have made this portfolio and this enhanced my knowledge of react like, handeling jason file inside components and using react folder structure in a better way. ",
       "skills": ["React"],
-      "source": "https://github.com/prakhar2020cs/vite-project/tree/main/src",
+      "source": "https://github.com/prakhar2020cs/deployed-react-portfolio/tree/main/vite-project",
       "demo": "https://zippy-starburst-d78231.netlify.app/"
       
     } 
