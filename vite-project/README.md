@@ -1,7 +1,8 @@
 # My Portfolio 
 ## overview
+- **About Me**
+- **Skills**
 - **Project Showcase Cards:** Display projects with descriptions and links.
-- **About Me:**
 - **Contact:** Contact information.
 
 ##features
