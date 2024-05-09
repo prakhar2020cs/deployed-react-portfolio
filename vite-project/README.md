@@ -5,8 +5,7 @@
 - **Project Showcase Cards:** Display projects with descriptions and links.
 - **Contact:** Contact information.
 
-##features
-- while Creating this portfolio i enhanced my understanding of ReactJS.
+## features
 - I used a better way to manage JSON files inside components.
 - I used React folder structure more effectively.
 
