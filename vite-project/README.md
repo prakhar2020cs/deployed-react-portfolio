@@ -5,7 +5,7 @@
 - **Project Showcase Cards:** Display projects with descriptions and links.
 - **Contact:** Contact information.
 
-## features
+## Features
 - I used a better way to manage JSON files inside components.
 - I used React folder structure more effectively.
 
