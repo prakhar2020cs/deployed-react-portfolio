@@ -1,24 +1,72 @@
 [
-    {
-      "title": "HTML",
-      "imageSrc": "skills/html.png"
-    },
-    {
-      "title": "CSS",
-      "imageSrc": "skills/css.png"
-    },
-    {
-      "title": "Javascript",
-      "imageSrc": "skills/javascript.png"
-    },
-    {
-      "title": "React",
-      "imageSrc": "skills/react.png"
-    },
-    {
-      "title": "Bootstrap",
-      "imageSrc": "skills/bootstrap.png"
-    }
-  
- 
-  ]
+  {
+    "title": "HTML",
+    "imageSrc": "skills/html.png",
+    "category": "frontend"
+  },
+  {
+    "title": "CSS",
+    "imageSrc": "skills/css.png",
+    "category": "frontend"
+  },
+  {
+    "title": "JavaScript",
+    "imageSrc": "skills/javascript.png",
+    "category": "frontend"
+  },
+  {
+    "title": "React",
+    "imageSrc": "skills/react.png",
+    "category": "frontend"
+  },
+  {
+    "title": "Bootstrap",
+    "imageSrc": "skills/bootstrap.png",
+    "category": "frontend"
+  },
+  {
+    "title": "ASP.NET Core",
+    "imageSrc": "skills/dotnet.png",
+    "category": "backend"
+  },
+  {
+    "title": "Entity Framework",
+    "imageSrc": "skills/entityframework.png",
+    "category": "backend"
+  },
+  {
+    "title": "Dapper",
+    "imageSrc": "skills/dapper.png",
+    "category": "backend"
+  },
+  {
+    "title": "SQL",
+    "imageSrc": "skills/sql.png",
+    "category": "database"
+  },
+  {
+    "title": "MongoDB",
+    "imageSrc": "skills/mongodb.png",
+    "category": "database"
+  },
+  {
+    "title": "Firebase",
+    "imageSrc": "skills/firebase.png",
+    "category": "database"
+  },
+  {
+    "title": "PWA",
+    "imageSrc": "skills/pwa.png",
+    "category": "other"
+  },
+  {
+    "title": "IndexedDB",
+    "imageSrc": "skills/indexeddb.png",
+    "category": "other"
+  },
+  {
+    "title": "Dexie.js",
+    "imageSrc": "skills/dexie.png",
+    "category": "other"
+  }
+]

@@ -1,12 +1,52 @@
 @import "vars.css";
-*{
-  box-sizing:border-box; /* border is considered when calculating the height and width of the obj */
-  margin:0;
-  padding:0;
-  font-family:var(--font-roboto);
-  letter-spacing: 1px; 
+@import "@fontsource/outfit";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-primary);
+  letter-spacing: 0.5px;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gradient-primary);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gradient-secondary);
+}
+
+/* Animation classes */
+.animate-fadeInUp {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.translate-y-12 {
+  transform: translateY(3rem);
 }
