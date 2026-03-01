@@ -6,24 +6,24 @@ import styles from './Skills.module.css';
 export const Skills = () => {
   const [activeCategory, setActiveCategory] = useState('all');
   const [visibleSkills, setVisibleSkills] = useState([]);
-  
+
   // Get unique categories
   const categories = ['all', ...new Set(skillsData.map(skill => skill.category))];
-  
+
   // Filter skills based on active category
-  const filteredSkills = activeCategory === 'all' 
-    ? skillsData 
+  const filteredSkills = activeCategory === 'all'
+    ? skillsData
     : skillsData.filter(skill => skill.category === activeCategory);
-  
+
   // Animation effect for skill levels
   useEffect(() => {
     const timer = setTimeout(() => {
       setVisibleSkills(filteredSkills);
     }, 300);
-    
+
     return () => clearTimeout(timer);
   }, [activeCategory, filteredSkills]);
-  
+
   const getCategoryLabel = (category) => {
     const labels = {
       'frontend': 'Frontend',
@@ -34,7 +34,7 @@ export const Skills = () => {
     };
     return labels[category] || category;
   };
-  
+
   const getSkillLevel = (skillTitle) => {
     const levels = {
       'HTML': 95,
@@ -47,7 +47,13 @@ export const Skills = () => {
       'Dapper': 75,
       'SQL': 85,
       'MongoDB': 70,
-      'Firebase': 75,
+      'Next.js': 88,
+      'Redux-Toolkit': 85,
+      'TailwindCSS': 90,
+      'GitHub': 85,
+      'Git': 88,
+      'VScode': 92,
+      'MS SQL Server': 80,
       'PWA': 80,
       'IndexedDB': 72,
       'Dexie.js': 78
@@ -61,14 +67,14 @@ export const Skills = () => {
         <div className={styles.decorationBlob1}></div>
         <div className={styles.decorationBlob2}></div>
       </div>
-      
+
       <div className={styles.titleContainer}>
         <h2 className={styles.title}>My Skills</h2>
         <p className={styles.subtitle}>
           Here are the technologies and tools I've mastered through hands-on experience and continuous learning
         </p>
       </div>
-      
+
       <div className={styles.categories}>
         {categories.map(category => (
           <button
@@ -80,10 +86,10 @@ export const Skills = () => {
           </button>
         ))}
       </div>
-      
+
       <div className={styles.skillsGrid}>
         {visibleSkills.map((skill, index) => (
-          <div 
+          <div
             className={styles.skillCard}
             key={skill.title}
             style={{
@@ -91,9 +97,9 @@ export const Skills = () => {
             }}
           >
             <div className={styles.skillImageContainer}>
-              <img 
-                src={getImageUrl(skill.imageSrc)} 
-                alt={skill.title} 
+              <img
+                src={getImageUrl(skill.imageSrc)}
+                alt={skill.title}
                 onError={(e) => {
                   e.target.src = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>';
                 }}
@@ -101,7 +107,7 @@ export const Skills = () => {
             </div>
             <h3 className={styles.skillName}>{skill.title}</h3>
             <div className={styles.skillLevel}>
-              <div 
+              <div
                 className={styles.skillLevelFill}
                 style={{
                   width: `${getSkillLevel(skill.title)}%`,

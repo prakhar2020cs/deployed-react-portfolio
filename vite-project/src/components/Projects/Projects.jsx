@@ -6,16 +6,16 @@ import { FaGithub, FaExternalLinkAlt, FaCode } from 'react-icons/fa';
 
 export const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('all');
-  
+
   // Get all unique skills for filtering
   const allSkills = [...new Set(projectsData.flatMap(project => project.skills))];
   const filters = ['all', ...allSkills];
-  
+
   // Filter projects based on active filter
-  const filteredProjects = activeFilter === 'all' 
-    ? projectsData 
+  const filteredProjects = activeFilter === 'all'
+    ? projectsData
     : projectsData.filter(project => project.skills.includes(activeFilter));
-  
+
   const getProjectStats = () => {
     return {
       totalProjects: projectsData.length,
@@ -23,7 +23,7 @@ export const Projects = () => {
       yearsOfExperience: '1+' // You can calculate this dynamically
     };
   };
-  
+
   const stats = getProjectStats();
 
   return (
@@ -32,14 +32,14 @@ export const Projects = () => {
         <div className={styles.decorationElement1}></div>
         <div className={styles.decorationElement2}></div>
       </div>
-      
+
       <div className={styles.header}>
         <h2 className={styles.title}>My Projects</h2>
         <p className={styles.subtitle}>
           Here are some of my recent projects showcasing my skills and expertise in web development
         </p>
       </div>
-      
+
       <div className={styles.stats}>
         <div className={styles.statItem}>
           <div className={styles.statNumber}>{stats.totalProjects}</div>
@@ -54,7 +54,7 @@ export const Projects = () => {
           <div className={styles.statLabel}>Years Experience</div>
         </div>
       </div>
-      
+
       <div className={styles.filters}>
         {filters.map(filter => (
           <button
@@ -66,18 +66,18 @@ export const Projects = () => {
           </button>
         ))}
       </div>
-      
+
       <div className={styles.projectsGrid}>
         {filteredProjects.map((project, index) => (
-          <div 
+          <div
             className={styles.projectCard}
             key={project.title}
             style={{
               animationDelay: `${index * 0.1}s`
             }}
           >
-            <img 
-              src={getImageUrl(project.imageSrc)} 
+            <img
+              src={getImageUrl(project.imageSrc)}
               alt={project.title}
               className={styles.projectImage}
               onError={(e) => {
@@ -96,22 +96,26 @@ export const Projects = () => {
                 ))}
               </div>
               <div className={styles.projectActions}>
-                <a 
-                  href={project.source} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className={styles.githubBtn}
-                >
-                  <FaGithub /> Source Code
-                </a>
-                <a 
-                  href={project.demo} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className={styles.demoBtn}
-                >
-                  <FaExternalLinkAlt /> Live Demo
-                </a>
+                {project.source && (
+                  <a
+                    href={project.source}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.githubBtn}
+                  >
+                    <FaGithub /> Source Code
+                  </a>
+                )}
+                {project.demo && (
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.demoBtn}
+                  >
+                    <FaExternalLinkAlt /> Live Demo
+                  </a>
+                )}
               </div>
             </div>
           </div>

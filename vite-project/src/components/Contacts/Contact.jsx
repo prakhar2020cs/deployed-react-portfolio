@@ -10,26 +10,26 @@ export const Contact = () => {
     subject: '',
     message: ''
   });
-  
+
   const [isSubmitting, setIsSubmitting] = useState(false);
-  
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
     });
   };
-  
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form submission
     await new Promise(resolve => setTimeout(resolve, 2000));
-    
+
     // In a real app, you would send this to your backend
     console.log('Form submitted:', formData);
-    
+
     // Reset form
     setFormData({
       name: '',
@@ -37,11 +37,11 @@ export const Contact = () => {
       subject: '',
       message: ''
     });
-    
+
     setIsSubmitting(false);
     alert('Thank you for your message! I\'ll get back to you soon.');
   };
-  
+
   const copyEmail = () => {
     navigator.clipboard.writeText('prakhar06035@gmail.com');
     alert('Email copied to clipboard!');
@@ -53,14 +53,14 @@ export const Contact = () => {
         <div className={styles.decorationCircle1}></div>
         <div className={styles.decorationCircle2}></div>
       </div>
-      
+
       <div className={styles.content}>
         <div className={styles.leftColumn}>
           <h2 className={styles.title}>Get In Touch</h2>
           <p className={styles.subtitle}>
             Have a project in mind or want to discuss opportunities? Feel free to reach out!
           </p>
-          
+
           <div className={styles.contactInfo}>
             <div className={styles.contactItem}>
               <div className={styles.contactIcon}>
@@ -68,8 +68,8 @@ export const Contact = () => {
               </div>
               <div className={styles.contactDetails}>
                 <div className={styles.contactLabel}>Email</div>
-                <a 
-                  href="mailto:prakhar06035@gmail.com" 
+                <a
+                  href="mailto:prakhar06035@gmail.com"
                   className={styles.contactValue}
                   onClick={copyEmail}
                 >
@@ -77,7 +77,7 @@ export const Contact = () => {
                 </a>
               </div>
             </div>
-            
+
             <div className={styles.contactItem}>
               <div className={styles.contactIcon}>
                 <FaPhone />
@@ -89,7 +89,7 @@ export const Contact = () => {
                 </a>
               </div>
             </div>
-            
+
             <div className={styles.contactItem}>
               <div className={styles.contactIcon}>
                 <FaMapMarkerAlt />
@@ -97,40 +97,40 @@ export const Contact = () => {
               <div className={styles.contactDetails}>
                 <div className={styles.contactLabel}>Location</div>
                 <div className={styles.contactValue}>
-                  India
+                  Noida, Uttar Pradesh, India
                 </div>
               </div>
             </div>
           </div>
-          
+
           <div className={styles.socialLinks}>
-            <a 
-              href="https://github.com/prakhar2020cs" 
-              target="_blank" 
-              rel="noopener noreferrer" 
+            <a
+              href="https://github.com/prakhar2020cs"
+              target="_blank"
+              rel="noopener noreferrer"
               className={styles.socialLink}
             >
               <FaGithub />
             </a>
-            <a 
-              href="https://linkedin.com/in/prakhar-sharma-96a831272" 
-              target="_blank" 
-              rel="noopener noreferrer" 
+            <a
+              href="https://linkedin.com/in/prakhar-sharma-96a831272"
+              target="_blank"
+              rel="noopener noreferrer"
               className={styles.socialLink}
             >
               <FaLinkedin />
             </a>
-            <a 
-              href="https://twitter.com" 
-              target="_blank" 
-              rel="noopener noreferrer" 
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className={styles.socialLink}
             >
               <FaTwitter />
             </a>
           </div>
         </div>
-        
+
         <div className={styles.rightColumn}>
           {/* <div className={styles.formContainer}>
             <h3 className={styles.formTitle}>Send me a message</h3>

@@ -2,6 +2,7 @@ import Hero from './components/Hero/Hero.jsx';
 import styles from './App.module.css';
 import Navbar from './components/Navbar/Navbar.jsx';
 import { Skills } from './components/Skills/Skills.jsx';
+import { Experience } from './components/Experience/Experience.jsx';
 import { Projects } from './components/Projects/Projects.jsx';
 import { Contact } from './components/Contacts/Contact.jsx';
 import Particles from './components/Particles/Particles.jsx';
@@ -16,6 +17,9 @@ function App() {
       <Hero />
       <ScrollAnimation delay={0.2}>
         <Skills />
+      </ScrollAnimation>
+      <ScrollAnimation delay={0.3}>
+        <Experience />
       </ScrollAnimation>
       <ScrollAnimation delay={0.4}>
         <Projects />

@@ -1,0 +1,26 @@
+[
+    {
+        "role": "Software-Associate",
+        "organisation": "Webninjaz",
+        "startDate": "Nov, 2024",
+        "endDate": "Apr, 2025",
+        "experiences": [
+            "Developed responsive, pixel-perfect websites based on high-fidelity Figma designs.",
+            "Implemented dynamic data integration and secure token-based authentication in Next.js apps.",
+            "Built full-stack CRUD applications using MongoDB and RESTful APIs."
+        ],
+        "imageSrc": "history/webninjaz.png"
+    },
+    {
+        "role": ".NET Trainee",
+        "organisation": "MishInfotech",
+        "startDate": "Aug, 2024",
+        "endDate": "Present",
+        "experiences": [
+            "Migrated legacy Angular applications to React.js, integrating .NET backend APIs.",
+            "Built PWAs with offline support, service workers, and Redux Toolkit.",
+            "Modernized legacy APIs and optimized heavy-load response times by ~13% (30s → 26s)."
+        ],
+        "imageSrc": "history/mish.png"
+    }
+]

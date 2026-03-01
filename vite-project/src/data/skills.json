@@ -20,6 +20,21 @@
     "category": "frontend"
   },
   {
+    "title": "Next.js",
+    "imageSrc": "skills/nextjs.png",
+    "category": "frontend"
+  },
+  {
+    "title": "Redux-Toolkit",
+    "imageSrc": "skills/redux.png",
+    "category": "frontend"
+  },
+  {
+    "title": "TailwindCSS",
+    "imageSrc": "skills/tailwind.png",
+    "category": "frontend"
+  },
+  {
     "title": "Bootstrap",
     "imageSrc": "skills/bootstrap.png",
     "category": "frontend"
@@ -45,28 +60,33 @@
     "category": "database"
   },
   {
+    "title": "MS SQL Server",
+    "imageSrc": "skills/mssql.png",
+    "category": "database"
+  },
+  {
     "title": "MongoDB",
     "imageSrc": "skills/mongodb.png",
     "category": "database"
   },
   {
-    "title": "Firebase",
-    "imageSrc": "skills/firebase.png",
-    "category": "database"
+    "title": "GitHub",
+    "imageSrc": "skills/github.png",
+    "category": "other"
+  },
+  {
+    "title": "Git",
+    "imageSrc": "skills/git.png",
+    "category": "other"
+  },
+  {
+    "title": "VScode",
+    "imageSrc": "skills/vscode.png",
+    "category": "other"
   },
   {
     "title": "PWA",
     "imageSrc": "skills/pwa.png",
-    "category": "other"
-  },
-  {
-    "title": "IndexedDB",
-    "imageSrc": "skills/indexeddb.png",
-    "category": "other"
-  },
-  {
-    "title": "Dexie.js",
-    "imageSrc": "skills/dexie.png",
     "category": "other"
   }
 ]

@@ -1,42 +1,74 @@
 [
   {
-    "title": "Sailer Notification System",
+    "title": "Autoslide (Work Project)",
+    "imageSrc": "projects/autoslide.png",
+    "description": "Designed and developed a responsive UI/Dashboard in React for Autoslide during my tenure at Webninjaz. Focused on pixel-perfect implementation and interactive components.",
+    "skills": [
+      "React",
+      "JavaScript",
+      "CSS"
+    ]
+  },
+  {
+    "title": "Stocks-Company Dashboard (Work Project)",
+    "imageSrc": "projects/stocks.png",
+    "description": "Created a dynamic stocks dashboard at Webninjaz featuring interactive charts and a modern UI for real-time data visualization.",
+    "skills": [
+      "React",
+      "Charts.js",
+      "JavaScript",
+      "Responsive Design"
+    ]
+  },
+  {
+    "title": "Sailer Notification System (Work Project)",
     "imageSrc": "projects/sailer.png",
-    "description": "Converted an Angular application for sailor notifications to React using Redux. Implemented offline mode using Dexie.js for IndexedDB storage.",
-    "skills": ["React", "Redux", "Dexie.js", "IndexedDB", "PWA"],
-    "source": "https://github.com/prakhar2020cs/sailer-notification-react",
-    "demo": "https://sailer-notification-demo.netlify.app/"
+    "description": "Migrated a legacy Angular application to React for sailor notifications. Implemented offline support using Service Workers and Dexie.js (IndexedDB).",
+    "skills": [
+      "React",
+      "Redux Toolkit",
+      "ASP.NET Core",
+      "Dexie.js",
+      "PWA",
+      "IndexedDB"
+    ]
   },
   {
-    "title": "Online Courses Website",
-    "imageSrc": "projects/website.png",
-    "description": "This is a project made to learn HTML, CSS, JavaScript, Bootstrap by building frontend of the website.",
-    "skills": ["React", "JavaScript", "Bootstrap"],
-    "source": "https://github.com/prakhar2020cs/2020cs128project-id22/tree/main/project%20copy",
-    "demo": "https://65e84ec07fe83303ec7154c4--eloquent-flan-a17ca3.netlify.app/portfolio/day4/assignment4%20crcwebsite/project%20copy/index.html"
+    "title": "Leave Management System",
+    "imageSrc": "projects/lms.png",
+    "description": "Full-stack ASP.NET Core MVC application for employee leave management. Features role-based access control, Identity, EF Core, and CI/CD via Azure.",
+    "skills": [
+      "ASP.NET Core",
+      "EF Core",
+      "Identity",
+      "Azure",
+      "CI/CD"
+    ],
+    "source": "https://github.com/prakhar2020cs"
   },
   {
-    "title": "Training Portfolio",
-    "imageSrc": "projects/trainingtasks.png",
-    "description": "This is a portfolio of my work. I made it to learn frontend by doing tasks, during the training period in my college.",
-    "skills": ["React", "JavaScript", "Bootstrap"],
-    "source": "https://github.com/prakhar2020cs/react/tree/main/myapp",
-    "demo": "https://eloquent-flan-a17ca3.netlify.app"
+    "title": "Food Webapp",
+    "imageSrc": "projects/food.png",
+    "description": "Complete full-stack CRUD application with JWT authentication, debounced search, and email-based password reset using Next.js and MongoDB.",
+    "skills": [
+      "Next.js",
+      "MongoDB",
+      "JWT",
+      "Edgestore"
+    ],
+    "source": "https://github.com/prakhar2020cs",
+    "demo": "https://food-delivery-psi-cyan.vercel.app/"
   },
   {
     "title": "Document App UI",
     "imageSrc": "projects/docs.png",
-    "description": "This is a Frontend(UI) for an app which shows storage, notes etc. I made it for better understanding of React and TailwindCSS.",
-    "skills": ["React", "TailwindCSS"],
+    "description": "A refined Frontend(UI) for a document storage app, built to demonstrate mastery over React hooks and TailwindCSS layout systems.",
+    "skills": [
+      "React",
+      "TailwindCSS"
+    ],
     "source": "https://github.com/prakhar2020cs/vite-project/tree/main/src",
     "demo": "https://lovely-begonia-3ca6f0.netlify.app"
-  },
-  {
-    "title": "This Portfolio",
-    "imageSrc": "projects/thisportfolio.png",
-    "description": "This is the portfolio on which you are, right now. I have made this portfolio and this enhanced my knowledge of React like, handling JSON file inside components and using React folder structure in a better way.",
-    "skills": ["React"],
-    "source": "https://github.com/prakhar2020cs/deployed-react-portfolio/tree/main/vite-project",
-    "demo": "https://zippy-starburst-d78231.netlify.app/"
   }
+
 ]

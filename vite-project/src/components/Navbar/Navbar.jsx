@@ -10,7 +10,7 @@ const Navbar = () => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
     };
-    
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -46,6 +46,12 @@ const Navbar = () => {
               e.preventDefault();
               scrollToSection("skills");
             }}>Skills</a>
+          </li>
+          <li>
+            <a href="#experience" onClick={(e) => {
+              e.preventDefault();
+              scrollToSection("experience");
+            }}>Experience</a>
           </li>
           <li>
             <a href="#projects" onClick={(e) => {
