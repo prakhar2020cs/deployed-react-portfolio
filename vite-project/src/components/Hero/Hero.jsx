@@ -14,11 +14,11 @@ function Hero() {
   const handleDownloadResume = () => {
     // In a real app, this would point to your actual resume file
     const link = document.createElement('a');
-    link.href = 'https://drive.google.com/file/d/1cpsnA2BL5q99mbtldpnDaz9YuzNqyZ41/view?usp=drive_link'; // Update this path to your actual resume
+    link.href = 'https://drive.google.com/file/d/1EybPIEJaz6BxG2iQrUr6lckUzA_ItPfc/view?usp=drive_link'; // Update this path to your actual resume
     link.download = 'Prakhar-Sharma-Resume.pdf';
     link.target = '_blank';
     link.click();
-
+    
   };
 
   const scrollToContact = () => {
